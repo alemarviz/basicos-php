@@ -22,6 +22,7 @@
         }
     }
 
+    # programa de prueba
     $p = new Persona("Luis", "luis@correo.es");
     print_r($p);
     echo "Nombre: {$p->getNombre()}\n";
