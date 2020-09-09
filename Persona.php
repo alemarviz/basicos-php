@@ -12,10 +12,20 @@
         public function getNombre() {
             return $this->nombre;
         }
+        
+        public function getCorreo() {
+            return $this->correo;
+        }
+
+        public function mostrar() {
+            echo "\n{$this->nombre} / {$this->correo}\n";
+        }
     }
 
     $p = new Persona("Luis", "luis@correo.es");
     print_r($p);
-    echo "Nombre: {$p->getNombre()}";
+    echo "Nombre: {$p->getNombre()}\n";
+    echo "Correo: {$p->getCorreo()}\n";
+    $p->mostrar();
 
 ?>
